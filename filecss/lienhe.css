@@ -1,0 +1,143 @@
+.contact-container {
+  max-width: 520px;
+  margin: 40px auto 0 auto;
+  background-image: url('../AlbumASM1/lienhe.jpg');
+  background-size: cover;
+    background-position: center;
+     /* Áp dụng filter blur để làm mờ background */
+    /* Để pseudo-element không đè lên nội dung */
+    z-index: -1;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 36px 28px 28px 28px;
+  text-align: center;
+}
+.contact-container h1 {
+  color: #b80000;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  text-shadow:
+    1px 1px 0 #000;
+}
+.contact-desc {
+  color: #fefefe;
+  margin-bottom: 26px;
+  font-size: 1.08em;
+  text-shadow:
+    1px 1px 0 #000;
+}
+.contact-form {
+  margin-bottom: 24px;
+}
+.form-group {
+  margin-bottom: 18px;
+  text-align: left;
+}
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1em;
+  background: #fafbfc;
+  transition: border 0.2s, box-shadow 0.2s;
+  margin-top: 4px;
+  margin-bottom: 0;
+  box-sizing: border-box;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1.5px solid #b80000;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(184,0,0,0.08);
+}
+.contact-form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+.contact-btn {
+  width: 100%;
+  padding: 12px 0;
+  background: linear-gradient(90deg, #b80000 60%, #ff3333 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(184,0,0,0.10);
+  letter-spacing: 1px;
+}
+.contact-btn:hover {
+  background: linear-gradient(90deg, #ff3333 60%, #b80000 100%);
+  box-shadow: 0 4px 16px rgba(184,0,0,0.18);
+}
+.contact-success {
+  display: none;
+  color: #219653;
+  background: #eafaf1;
+  border: 1px solid #b6e2cc;
+  border-radius: 6px;
+  padding: 10px 0;
+  margin-top: 14px;
+  font-weight: bold;
+  font-size: 1.08em;
+  animation: fadeIn 0.5s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.contact-info-row {
+  display: flex;
+  gap: 18px;
+  margin-top: 36px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact-info-card {
+  flex: 1 1 120px;
+  background: #f7fafd;
+  border-radius: 10px;
+  padding: 18px 12px 10px 12px;
+  text-align: center;
+  box-shadow: 0 1px 8px rgba(33,150,243,0.06);
+  min-width: 120px;
+  margin-bottom: 12px;
+  font-size: 0.98em;
+}
+.contact-info-card h3 {
+  color: #b80000;
+  font-size: 1.08em;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.contact-info-card a {
+  color: #2196f3;
+  text-decoration: none;
+  font-weight: 500;
+}
+.contact-info-card a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 700px) {
+  .contact-container { padding: 16px 4px; }
+  .contact-info-row { flex-direction: column; gap: 10px; }
+}

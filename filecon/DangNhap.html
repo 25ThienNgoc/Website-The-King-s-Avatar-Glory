@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <link href="../filecss/DangNhap.css" rel="stylesheet" />
+  <!-- Css body-->
+  <link href="../filecss/Assignment.css" rel="stylesheet" />
+  <!-- CSS header -->
+  <link href="../filecss/header.css" rel="stylesheet" />
+  <!-- CSS nav -->
+  <link href="../filecss/nav.css" rel="stylesheet" />
+  <!-- CSS footer -->
+  <link href="../filecss/footer.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- header -->
+    <div id="header-container"></div>
+    <!-- nav -->
+    <div id="nav-container"></div>
+    <article>
+        <div class="container">
+            <!-- Form Đăng Nhập -->
+            <form class="form-container" id="login-form">
+                <h1>Đăng Nhập</h1>
+                <div id="login-error" style="color:red; margin-bottom:10px;"></div>
+                <input type="text" name="username" placeholder="Email/Tên đăng nhập">
+                <input type="password" name="password" placeholder="Mật khẩu">
+                <button type="submit" class="login-btn">ĐĂNG NHẬP</button>
+                <div class="links">
+                    <a href="#">Quên mật khẩu</a>
+                    <a href="../filecon/DangnhapSMS.html">Đăng nhập với SMS</a>
+                </div>
+                <div class="separator">HOẶC</div>
+                <div class="social-login">
+                    <button class="facebook">Facebook</button>
+                    <button class="google">Google</button>
+                </div>
+                <div class="register-link">
+                    <p>Bạn chưa có tài khoản<a href="../filecon/Dangki.html">Đăng ký</a></p> 
+                </div>
+            </form>
+        </div>
+    </article>
+    <!-- footer -->
+    <div id="footer-container"></div>
+
+    <!-- Script header -->
+    <script src="../filejs/header.js"></script>
+    <!-- Script nav -->
+    <script src="../filejs/nav.js"></script>
+    <!-- Script footer -->
+    <script src="../filejs/footer.js"></script>
+    <script>
+document.getElementById('login-form').addEventListener('submit', function(e) {
+    var username = this.username.value.trim();
+    var password = this.password.value.trim();
+    var errorDiv = document.getElementById('login-error');
+    let errors = [];
+    if (!username) {
+        errors.push('Vui lòng nhập Email/Số điện thoại/Tên đăng nhập.');
+    }
+    if (!password) {
+        errors.push('Vui lòng nhập mật khẩu.');
+    }
+    if (errors.length > 0) {
+        e.preventDefault();
+        errorDiv.textContent = '';
+        alert(errors.join(' '));
+        // Đặt focus vào ô đầu tiên bị thiếu
+        if (!username) {
+            this.username.focus();
+        } else if (!password) {
+            this.password.focus();
+        }
+    }
+});
+</script>
+</body>
+</html>

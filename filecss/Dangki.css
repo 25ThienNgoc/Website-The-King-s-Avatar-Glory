@@ -1,0 +1,167 @@
+
+article {
+    gap: 20px;
+    padding: 30px;
+}
+
+.container {
+    margin: 0 auto;
+    background-color: #ffdcdc;
+    padding: 10px;
+    padding-left: 50px;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="radio"],
+input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.gender-options {
+    display: flex;
+    align-items: center;
+}
+
+.gender-options label {
+    margin-right: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff0000;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #b30000;
+}
+
+.separator {
+    text-align: center;
+    margin: 5px;
+    color: #ccc;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.social-login button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.social-login .facebook {
+    background-color: #3b5998;
+}
+
+.social-login .facebook:hover{
+    background-color: #23355c;
+}
+
+.social-login .google {
+    background-color: #db4437;
+}
+
+.social-login .google:hover{
+    background-color: #952e25;
+}
+
+.terms, .register-link, .login-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+label {
+    font-size: 14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.next-btn {
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.next-btn:hover {
+    background-color: #b30000;
+}
+
+@media (max-width: 720px) {
+    article {
+        grid-template-columns: 1fr 1fr;  
+    }
+}

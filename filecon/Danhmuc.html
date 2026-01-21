@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Danh Mục Sản Phẩm</title>
+<link href="../filecss/DanhMuc.css" rel="stylesheet" />  
+<link href="../filecss/Assignment.css" rel="stylesheet" />
+  <link href="../filecss/header.css" rel="stylesheet" />
+  <link href="../filecss/nav.css" rel="stylesheet" />
+  <link href="../filecss/article.css" rel="stylesheet" />
+  <link href="../filecss/footer.css" rel="stylesheet" />
+
+</head>
+<body>
+  <!-- header -->
+  <div id="header-container"></div>
+  <!-- nav -->
+  <div id="nav-container"></div>
+
+  <h1 class="title">Danh Mục Sản Phẩm</h1>
+
+  <div class="product-taskbar">
+    <button class="category-btn" data-category="mockhoa">Móc Khóa</button>
+    <button class="category-btn" data-category="huyhieu">Huy Hiệu</button>
+    <button class="category-btn" data-category="standee">Standee</button>
+    <button class="category-btn" data-category="pola">Pola</button>
+    <button class="category-btn" data-category="banphim">Bàn Phím</button>
+    <button class="category-btn" data-category="figure">Figure</button>
+    <button class="category-btn" data-category="card">Card</button>
+    <button class="category-btn" data-category="shikishi">Shikishi</button>
+    <button class="category-btn" data-category="ve">Vé</button>
+  </div>
+
+  <article id="productList" class="product-list"></article>
+
+  <!-- footer -->
+  <div id="footer-container"></div>
+  
+  <button id="backToTop">^</button>
+
+
+  <!-- Nhúng dữ liệu sản phẩm -->
+  <script src="../filejs/productdata.js"></script>
+  <script src="../filejs/giohang.js"></script>
+  <script src="../filejs/danhmuc.js"></script>
+  <!-- XÓA các dòng sau nếu không có file thực -->
+  <!--
+  <script src="../filejs/sanpham/mockhoa.js"></script>
+  <script src="../filejs/sanpham/huyhieu.js"></script>
+  <script src="../filejs/sanpham/standee.js"></script>
+  <script src="../filejs/sanpham/pola.js"></script>
+  <script src="../filejs/sanpham/banphim.js"></script>
+  <script src="../filejs/sanpham/figure.js"></script>
+  <script src="../filejs/sanpham/card.js"></script>
+  <script src="../filejs/sanpham/shikishi.js"></script>
+  <script src="../filejs/sanpham/ve.js"></script>
+  -->
+
+  <!-- Header, Nav, Footer -->
+  <script src="../filejs/header.js"></script>
+  <script src="../filejs/nav.js"></script>
+  <script src="../filejs/footer.js"></script>
+  <script src="../filejs/backtotop.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liên Hệ</title>
+  <link rel="stylesheet" href="../filecss/Assignment.css">
+  <link rel="stylesheet" href="../filecss/header.css">
+  <link rel="stylesheet" href="../filecss/nav.css">
+  <link rel="stylesheet" href="../filecss/footer.css">
+  <link rel="stylesheet" href="../filecss/lienhe.css">
+</head>
+<body>
+  <!-- header -->
+  <div id="header-container"></div>
+  <!-- nav -->
+  <div id="nav-container"></div>
+
+  <div class="contact-container">
+    <h1>Liên Hệ Với Chúng Tôi</h1>
+    <p class="contact-desc">Bạn có câu hỏi hoặc cần hỗ trợ? Hãy gửi tin nhắn cho chúng tôi, chúng tôi sẽ phản hồi sớm nhất!</p>
+    <form class="contact-form" id="contactForm" autocomplete="off">
+      <div class="form-group">
+        <label for="name">Họ và tên</label>
+        <input type="text" id="name" name="name" placeholder="Nhập họ và tên của bạn" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Nội dung tin nhắn</label>
+        <textarea id="message" name="message" rows="4" placeholder="Nhập nội dung cần hỗ trợ..." required></textarea>
+      </div>
+      <button type="submit" class="contact-btn">Gửi</button>
+      <div id="contact-success" class="contact-success">Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm nhất.</div>
+    </form>
+    <div class="contact-info-row">
+      <div class="contact-info-card">
+        <h3>Địa Chỉ</h3>
+        <div>1324 Tô Ký<br>Gò Vấp, TP.HCM<br>Việt Nam</div>
+      </div>
+      <div class="contact-info-card">
+        <h3>Liên Hệ</h3>
+        <div>Email: <a href="mailto:info@ToanChuc.com">info@ToanChuc.com</a><br>
+        Điện thoại: <a href="tel:0123456789">0123456789</a></div>
+      </div>
+      <div class="contact-info-card">
+        <h3>Giờ Làm Việc</h3>
+        <div>Thứ Hai - Thứ Sáu: 8:00 - 20:00</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-container"></div>
+  <script src="../filejs/header.js"></script>
+  <script src="../filejs/nav.js"></script>
+  <script src="../filejs/footer.js"></script>
+  <button id="backToTop">^</button>
+  <script src="../filejs/backtotop.js"></script>
+  <script src="../filejs/lienhe.js"></script>
+</body>
+</html>

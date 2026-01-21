@@ -1,0 +1,121 @@
+.cart-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+}
+.cart-title {
+  font-size: 2rem;
+  color: #b80000;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+}
+.cart-table th, .cart-table td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  font-size: 1rem;
+}
+.cart-table th {
+  background: #f6a5a5;
+  color: #b80000;
+}
+.cart-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.cart-qty-btn {
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: none;
+  background: #b80000;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 2px;
+}
+.cart-remove-btn {
+  background: #eee;
+  color: #b80000;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+}
+.cart-remove-btn:hover {
+  background: #f6a5a5;
+  color: #d60000;
+}
+.cart-total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #d60000;
+  text-align: right;
+  margin-top: 18px;
+  display: inline-block;
+}
+.checkout-btn {
+  display: inline-block;
+  margin-left: 18px;
+  padding: 10px 28px;
+  background: #d60000;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.2s, box-shadow 0.2s;
+  vertical-align: middle;
+}
+.checkout-btn:hover {
+  background: #b80000;
+}
+.checkout-message {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 10000;
+  margin: 0;
+  text-align: left;
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: bold;
+  background: #d60000;
+  padding: 14px 28px;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  min-width: 320px;
+  display: none;
+}
+.checkout-message::before {
+  content: "❌";
+  font-size: 1.2em;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.cart-notification {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  background: #4caf50;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  font-size: 1rem;
+  display: none;
+  z-index: 9999;
+}

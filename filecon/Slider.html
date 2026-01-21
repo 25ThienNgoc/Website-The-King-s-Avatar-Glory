@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Slider Sản Phẩm</title>
+  <link rel="stylesheet" href="../filecss/slider.css">
+</head>
+<body>
+
+<div class="slider-container">
+  <div class="slider" id="productSlider">
+    <div class="slide active">
+      <img src="../Anhsp/Badge/Bg1.jpg" alt="Sản phẩm 1">
+      <div class="caption">Set Huy Hiệu 1</div>
+      <div class="product-info">
+        <h3>Set Huy Hiệu 1</h3>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="../Anhsp/Key/Key2.jpg" alt="Sản phẩm 2">
+      <div class="caption">Set Móc Khóa 2</div>
+      <div class="product-info">
+        <h3>Set Móc Khóa 2</h3>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="../Anhsp/Pola/Pola3.jpg" alt="Sản phẩm 3">
+      <div class="caption">Set Pola 3</div>
+      <div class="product-info">
+        <h3>Set Pola 3</h3>
+      </div>
+    </div>
+  </div>
+  <button class="prev" onclick="moveSlide(-1)">❮</button>
+  <button class="next" onclick="moveSlide(1)">❯</button>
+</div>
+
+<script src="../filejs/slider.js"></script>
+</body>
+</html>
