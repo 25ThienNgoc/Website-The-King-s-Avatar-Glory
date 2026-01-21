@@ -1,0 +1,64 @@
+article {
+  padding: 20px;
+}
+
+#productList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+article .hangmua {
+  border: 1px solid #000000;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  background-color: #f6a5a5;
+  text-align: center;
+}
+
+article .hangmua:hover {
+  transform: scale(1.05);
+}
+
+article .hangmua img {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+article .hangmua a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+  font-size: 20px;
+  display: block;
+  margin: 10px 0;
+}
+
+article .hangmua a:hover {
+  color: #ff0000;
+}
+
+article .giamua {
+  font-size: 16px;
+  font-weight: bold;
+  color: #c90000;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+article .giamua span {
+  text-decoration: line-through;
+  color: #373737;
+}
+
+@media (max-width: 720px) {
+  #productList {
+    grid-template-columns: 1fr 1fr;
+  }
+}

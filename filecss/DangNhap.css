@@ -1,0 +1,173 @@
+body {
+    background: linear-gradient(120deg, #ffdcdc 0%, #ffe3e3 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+article {
+    gap: 20px;
+    padding: 30px;
+}
+
+.container {
+    margin: 40px auto;
+    background: #fff;
+    padding: 32px 32px 24px 32px;
+    border-radius: 18px;
+    box-shadow: 0 6px 32px rgba(229,57,53,0.13), 0 2px 12px rgba(25,118,210,0.07);
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #d60000;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 14px;
+    border: 1.5px solid #ffdcdc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f9f9f9;
+    transition: border 0.2s;
+}
+
+input:focus {
+    border-color: #d60000;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #d60000;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(229,57,53,0.10);
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+button.qr-login {
+    background-color: #a72828;
+    margin-bottom: 18px;
+}
+
+button.qr-login:hover {
+    background-color: #771d1d;
+}
+
+button.facebook {
+    background-color: #3b5998;
+    margin-bottom: 8px;
+}
+
+button.facebook:hover {
+    background-color: #273a64;
+}
+
+button.google {
+    background-color: #db4437;
+}
+
+button.google:hover {
+    background-color: #a63329;
+}
+
+.login-btn {
+    background-color: #d60000;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background-color: #b30000;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 0.98em;
+}
+
+.separator {
+    text-align: center;
+    margin: 18px 0 10px 0;
+    color: #bbb;
+    font-size: 1em;
+    letter-spacing: 2px;
+}
+
+.social-login {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.terms, .register-link, .login-link {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.98em;
+}
+
+a {
+    color: #d60000;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #b30000;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+label {
+    font-size: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 12px 4px;
+        max-width: 98vw;
+    }
+    h1 {
+        font-size: 1.3rem;
+    }
+    button, input {
+        font-size: 1em;
+        padding: 10px;
+    }
+    .social-login {
+        flex-direction: column;
+        gap: 8px;
+    }
+}

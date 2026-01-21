@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết sản phẩm</title>
+  <link href="../filecss/Assignment.css" rel="stylesheet" />
+  <!-- CSS header -->
+  <link href="../filecss/header.css" rel="stylesheet" />
+  <!-- CSS nav -->
+  <link href="../filecss/nav.css" rel="stylesheet" />
+  <!-- CSS article -->
+  <link href="../filecss/article.css" rel="stylesheet" />
+  <!-- CSS footer -->
+  <link href="../filecss/footer.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../filecss/chitietsanpham.css">
+
+</head>
+<body>
+        <!-- header -->
+    <div id="header-container"></div>
+    <!-- nav -->
+    <div id="nav-container"></div>
+    <span id="cart-count" class="cart-badge"></span>
+    <div id="cart-notification" class="cart-notification"></div>
+
+  <div class="product-detail-container">
+    <div class="product-detail-main">
+      <img id="product-img" src="" alt="Ảnh sản phẩm" class="product-img">
+      <div class="product-detail-info">
+        <h1 id="product-name"></h1>
+        <p id="product-price"></p>
+        <div id="product-description" class="product-description"></div>
+        <!-- Thêm tiêu đề có thể click để ẩn/hiện -->
+        <div style="background:#e3e3e3;padding:8px 10px 4px 10px;border-radius:6px 6px 0 0;">
+          <span id="toggle-extra-detail" style="font-size:2em;font-weight:bold;cursor:pointer;user-select:none;">
+            Chi Tiết Sản Phẩm
+          </span>
+        </div>
+        <div id="product-extra-detail" class="product-extra-detail" style="transition:all 0.2s;">
+          <table>
+            <tr>
+              <td>Đánh Giá:</td>
+              <td id="product-rating"></td>
+            </tr>
+            <tr>
+              <td>Đã Bán:</td>
+              <td id="product-sold"></td>
+            </tr>
+            <tr>
+              <td>Trong Kho:</td>
+              <td id="product-stock"></td>
+            </tr>
+            <tr>
+              <td>Giá Ship:</td>
+              <td id="product-ship"></td>
+            </tr>
+          </table>
+        </div>
+        <button id="add-to-cart-btn" class="btn-buy">Thêm vào giỏ hàng</button>
+        <a href="Assignment.html" class="btn-back">Quay lại trang sản phẩm</a>
+      </div>
+    </div>
+  </div>
+
+
+<script src="../filejs/productdata.js"></script>
+<script src="../filejs/giohang.js"></script>
+<script src="../filejs/chitietsanpham.js"></script>
+   <!-- footer -->
+    <div id="footer-container"></div>
+
+    <!-- Script header -->
+    <script src="../filejs/header.js"></script>
+    <!-- Script nav -->
+    <script src="../filejs/nav.js"></script>
+    <!-- Script footer -->
+    <script src="../filejs/footer.js"></script>
+    <button id="backToTop">^</button>
+
+    <script src="../filejs/backtotop.js"></script>
+<script>
+// Ẩn/hiện phần chi tiết sản phẩm
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleBtn = document.getElementById('toggle-extra-detail');
+  const detailDiv = document.getElementById('product-extra-detail');
+  let isVisible = true;
+  toggleBtn.addEventListener('click', function() {
+    isVisible = !isVisible;
+    detailDiv.style.display = isVisible ? 'block' : 'none';
+  });
+});
+</script>
+
+</body>
+</html>

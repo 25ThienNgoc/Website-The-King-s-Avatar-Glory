@@ -1,0 +1,222 @@
+.title {
+  font-size: 25px;  
+    font-weight: bold; 
+    color: #000000;  
+    text-align: center;  
+    margin-top: 20px; 
+}
+
+.product-taskbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.category-btn {
+  padding: 8px 45px;
+  border: none;
+  background: #b80000;
+  color: white;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.category-btn:hover {
+  background: #d60000;
+  color: #000000;
+  transform: scale(1.05);
+}
+
+/* Danh sách sản phẩm */
+#productList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.hangmua {
+  border: 1px solid #000000;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  background-color: #f6a5a5;
+  text-align: center;
+}
+
+.hangmua:hover {
+  transform: scale(1.05);
+}
+
+.hangmua img {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.hangmua a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+  font-size: 20px;
+  display: block;
+  margin: 10px 0;
+}
+
+.hangmua a:hover {
+  color: #ff0000;
+}
+
+.giamua {
+  font-size: 16px;
+  font-weight: bold;
+  color: #c90000;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.giamua span {
+  text-decoration: line-through;
+  color: #373737;
+}
+
+/* Style cho product-card giống hangmua */
+.product-card {
+  border: 1px solid #000000;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  background-color: #f6a5a5;
+  text-align: center;
+  position: relative;
+  overflow: visible;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.product-card a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+  font-size: 20px;
+  display: block;
+  margin: 10px 0;
+}
+
+.product-card a:hover {
+  color: #ff0000;
+}
+
+.product-card .price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #c90000;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.product-card .price .old-price {
+  text-decoration: line-through;
+  color: #373737;
+}
+
+.product-card .price .new-price {
+  color: #c90000;
+}
+
+.product-card .description {
+  display: none;
+}
+
+.product-card .card-actions {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  z-index: 10;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  pointer-events: none; /* Để không ảnh hưởng layout khi chưa hover */
+}
+
+.product-card:hover .card-actions {
+  display: flex;
+  pointer-events: auto;
+}
+
+.btn-buy, .btn-add-cart {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 8px;
+  border: none;
+  background: #b80000;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+  text-decoration: none;
+  font-size: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  margin: 0;
+  letter-spacing: 1px;
+  text-align: center;
+  display: block;
+}
+
+.btn-buy {
+  margin-bottom: 8px;
+  background: #b80000;
+}
+
+.btn-add-cart {
+  background: #b80000;
+}
+
+.btn-buy:hover, .btn-add-cart:hover {
+  background: #ff3333;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
+
+/* ...existing code... */
+@media (max-width: 720px) {
+  #productList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Ẩn sản phẩm với hiệu ứng mờ dần */
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Hiện sản phẩm với hiệu ứng hiện dần */
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}

@@ -1,0 +1,64 @@
+header {
+    width: 100%;
+    background-color: #ff8a8a;
+    position: relative;
+}
+
+header img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+header .Bocuc {
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+    background-image: url('../AlbumASM1/background.gif');
+    background-size: 300px 100px;
+    background-size: cover;         /* Phủ đầy khối */
+    background-position: center;    /* Căn giữa */
+    background-repeat: no-repeat;   /* Không lặp ảnh */
+}
+
+header .Daude {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    margin: 0px; 
+}
+
+header .Daude a {
+    color: black;
+    text-decoration: none;
+}
+
+header .Daude a:hover {
+    color: #C60000;
+}
+
+header .Chude {
+    flex-grow: 1; 
+    text-align: center;
+}
+
+header .Chude h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    margin-block: 1px;
+    text-shadow: 2px 2px 0px #a8a8a8;
+}
+
+@media (max-width: 720px) {
+    header .header-content {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    header .Timkiem {
+        margin-top: 10px;  
+    }
+}

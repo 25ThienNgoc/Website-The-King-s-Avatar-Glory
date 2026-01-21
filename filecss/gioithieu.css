@@ -1,0 +1,415 @@
+
+
+#gioiThieuContainer {
+    max-width: 1100px;
+    margin: 48px auto;
+    padding: 0 18px 48px 18px;
+    color: #222;
+    line-height: 1.7;
+}
+
+#gioiThieuContainer h1 {
+    font-size: 2.6rem;
+    margin-bottom: 2.2rem;
+    text-align: center;
+    color: #1976d2;
+    letter-spacing: 1px;
+    font-weight: 800;
+    position: relative;
+    font-weight: bold;
+}
+
+#gioiThieuContainer h1 .highlight {
+    font-weight: bold;
+  font-size: 32px;
+    background: linear-gradient(90deg, #ff0400, #ff8c00, #ffee00);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: sans-serif;
+}
+.gioithieu-card-intro {
+    background-image: url("../AlbumASM1/GioiThieu.jpg");
+    background-size: cover;         /* Phủ đầy khối */
+    background-position: center;    /* Căn giữa */
+    background-repeat: no-repeat;   /* Không lặp ảnh */
+    backdrop-filter: blur(8px);
+    border-radius: 18px;
+    box-shadow: 0 4px 32px rgba(25, 118, 210, 0.08), 0 1.5px 8px rgba(229, 57, 53, 0.06);
+    padding: 28px 32px;
+    margin-bottom: 28px;
+    transition: box-shadow 0.2s, transform 0.2s;
+    position: relative;
+}
+
+
+.gioithieu-card-intro:hover {
+    box-shadow: 0 8px 40px rgba(25, 118, 210, 0.16), 0 2px 12px rgba(229, 57, 53, 0.10);
+    transform: translateY(-4px) scale(1.01);
+}
+
+#gioiThieuContainer .gioithieu-card-intro p {
+    color: #000000;
+    text-align: center;
+      text-shadow:
+    -1px -1px 0 #ffffff,
+    1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+}
+
+#gioiThieuContainer h2 {
+    font-size: 1.7rem;
+    margin-top: 2.8rem;
+    margin-bottom: 1.2rem;
+    color: #1976d2;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+}
+
+#gioiThieuContainer h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #ff0400, #ff8c00, #ffee00);
+    margin: 12px auto 0 auto;
+    border-radius: 2px;
+}
+
+#gioiThieuContainer h3 {
+    font-size: 1.18rem;
+    margin-top: 1.2rem;
+    color: #e53935;
+    font-weight: 600;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#gioiThieuContainer p {
+    margin-top: 1rem;
+    color: #333;
+    text-align: justify;
+}
+
+.gioithieu-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px rgba(25, 118, 210, 0.08), 0 1.5px 8px rgba(229, 57, 53, 0.06);
+    padding: 28px 32px;
+    margin-bottom: 28px;
+    transition: box-shadow 0.2s, transform 0.2s;
+    position: relative;
+}
+
+.gioithieu-card:hover {
+    box-shadow: 0 8px 40px rgba(25, 118, 210, 0.16), 0 2px 12px rgba(229, 57, 53, 0.10);
+    transform: translateY(-4px) scale(1.01);
+}
+
+.gioithieu-timeline {
+    position: relative;
+    margin: 48px 0;
+    padding-left: 0;
+    min-height: 220px;
+}
+
+.gioithieu-timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(#e53935);
+    border-radius: 2px;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.gioithieu-timeline-item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 48px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.gioithieu-timeline-content {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(25, 118, 210, 0.07);
+    padding: 32px 32px 28px 32px;
+    width: 60%;
+    min-width: 260px;
+    margin: 18px auto 0 auto;
+    position: relative;
+    border-left: 6px solid #d21919;
+    border-right: 6px solid #efefef;
+}
+
+.gioithieu-timeline-dot {
+    position: absolute;
+    left: 50%;
+    top: -36px;
+    width: 28px;
+    height: 28px;
+    background: #fff;
+    border: 6px solid #e53935;
+    box-shadow: 0 2px 8px rgba(229, 57, 53, 0.13);
+    border-radius: 50%;
+    z-index: 2;
+    transform: translate(-50%, 0);
+}
+
+.timeline-branch {
+    position: relative;
+    width: 100%;
+    margin: 0 auto 48px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.timeline-branch-lines {
+    position: relative;
+    width: 70%;
+    min-width: 320px;
+    height: 64px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.timeline-branch-vertical {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 4px;
+    height: 36px;
+    background: linear-gradient(#e53935);
+    transform: translateX(-50%);
+    z-index: 2;
+    border-radius: 2px;
+}
+
+.timeline-branch-horizontal {
+    position: absolute;
+    left: 0;
+    top: 36px;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(#e53935);
+    z-index: 1;
+    border-radius: 2px;
+}
+
+.timeline-branch-dot {
+    position: absolute;
+    left: 50%;
+    top: 36px;
+    width: 28px;
+    height: 28px;
+    background: #fff;
+    border: 6px solid #e53935;
+    box-shadow: 0 2px 8px rgba(229, 57, 53, 0.13);
+    border-radius: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+}
+
+/* Nhánh nhỏ nối từ đường ngang xuống từng card */
+.timeline-branch-members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    width: 70%;
+    min-width: 1120px;
+    margin-top: 0;
+    align-items: stretch;
+    position: relative;
+    top: -30px;
+}
+
+.timeline-branch-member-connector {
+    width: 100%;
+    height: 60px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.timeline-branch-member-connector-line {
+    width: 4px;
+    height: 60px;
+    background: linear-gradient(#e53935);
+    border-radius: 2px;
+    z-index: 2;
+}
+
+.timeline-branch-members .team-card {
+    margin-bottom: 0;
+    text-align: center;
+    border-left: 6px solid #d21919;
+    border-right: 6px solid #efefef;
+    min-height: 10px;
+}
+
+/* Responsive cho nhánh */
+@media (max-width: 900px) {
+    .timeline-branch-lines, .timeline-branch-members {
+        width: 90%;
+        min-width: 0;
+    }
+    .timeline-branch-members {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        top: 0;
+    }
+    .timeline-branch-horizontal {
+        left: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .timeline-branch-lines, .timeline-branch-members {
+        width: 100%;
+    }
+    .timeline-branch-members {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        top: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .gioithieu-timeline-content {
+        width: 98%;
+        min-width: 0;
+        border-left: 6px solid #d21919;
+        border-right: 6px solid #efefef;
+        padding: 20px 8px 16px 8px;
+    }
+    .gioithieu-timeline-item {
+        padding-top: 24px;
+    }
+}
+
+.gioithieu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 45px;
+    margin-bottom: 36px;
+}
+
+.gioithieu-grid .gioithieu-card {
+    margin-bottom: 0;
+    text-align: center;
+    border-left: 6px solid #d21919;
+    border-right: 6px solid #efefef;
+    min-height: 120px;
+    min-width: 200px;
+}
+
+.gioithieu-grid .gioithieu-card strong {
+    font-size: 1.1em;
+    color: #e53935;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.callout {
+    background: linear-gradient(90deg, #ffdcdc 30%, #feffdb 80%);
+    padding: 28px 36px;
+    margin: 48px 0 0 0;
+    border-left: 6px solid #d21919;
+    border-radius: 14px;
+    text-align: center;
+    font-size: 1.13em;
+    box-shadow: 0 2px 12px rgba(25, 118, 210, 0.07);
+}
+
+.callout h2 {
+    color: #e53935;
+    margin-bottom: 0.5em;
+    font-size: 1.4em;
+    border: none;
+    padding: 0;
+}
+
+.callout p {
+    color: #333;
+    margin: 0;
+    text-align: center;
+}
+
+ul, ol {
+    padding-left: 22px;
+}
+
+ul.values {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.values li {
+    margin-bottom: 10px;
+    padding-left: 28px;
+    position: relative;
+}
+
+ul.values li::before {
+    content: "★";
+    color: #fbc02d;
+    font-size: 1.1em;
+    position: absolute;
+    left: 0;
+    top: 1px;
+}
+
+#gioiThieuContainer strong {
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    #gioiThieuContainer {
+        padding: 0 2px 24px 2px;
+    }
+
+    .gioithieu-card, .gioithieu-timeline-content {
+        padding: 12px 8px;
+    }
+
+    .callout {
+        padding: 12px 8px;
+    }
+
+    .gioithieu-grid {
+        gap: 12px;
+    }
+
+    #gioiThieuContainer h1 {
+        font-size: 1.4rem;
+    }
+
+    #gioiThieuContainer h2 {
+        font-size: 1.1rem;
+        gap: 12px;
+    }
+}
+        
+    
+
+    #gioiThieuContainer h1 {
+        font-size: 1.4rem;
+    }
+
+    #gioiThieuContainer h2 {
+        font-size: 1.1rem;
+    }

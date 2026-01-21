@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+    <link href="../filecss/Dangki.css" rel="stylesheet" />
+  <!-- Css body-->
+  <link href="../filecss/Assignment.css" rel="stylesheet" />
+  <!-- CSS header -->
+  <link href="../filecss/header.css" rel="stylesheet" />
+  <!-- CSS nav -->
+  <link href="../filecss/nav.css" rel="stylesheet" />
+  <!-- CSS footer -->
+  <link href="../filecss/footer.css" rel="stylesheet" />
+
+</head>
+<body>
+    <!-- header -->
+    <div id="header-container"></div>
+    <!-- nav -->
+    <div id="nav-container"></div>
+    <div class="form-wrapper">
+  <article>
+    <div class="container">
+            <form class="form-container" id="register-form">
+                <h1>Đăng Ký</h1>
+                
+                <!-- Tên đăng nhập -->
+                <div class="form-group">
+                    <label for="name">Tên đăng nhập:</label>
+                    <input type="text" name="username" placeholder="Tên đăng nhập" required>
+                </div>
+    
+                <!-- Ngày sinh -->
+                <div class="form-group">
+                    <label for="dob">Ngày sinh</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+    
+                <!-- Giới tính -->
+                <div class="form-group">
+                    <label for="gender">Giới tính</label>
+                    <div class="gender-options">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Nam</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Nữ</label>
+                    </div>
+                </div>
+    
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="gmail">Email:</label>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+    
+                <!-- Số điện thoại -->
+                <div class="form-group">
+                    <label for="number">Số điện thoại:</label>
+                    <input type="text" name="phone" placeholder="Số điện thoại" required>
+                </div>
+    
+                <!-- Mật khẩu -->
+                <div class="form-group">
+                    <label for="pass">Mật khẩu:</label>
+                    <input type="password" name="password" placeholder="Mật khẩu" required>
+                </div>
+    
+                <!-- Chấp nhận điều khoản -->
+                <div class="form-group">
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        Tôi đồng ý với <a href="#">Điều khoản dịch vụ</a> và <a href="#">Chính sách bảo mật</a>
+                    </label>
+                </div>
+    
+                <button type="submit" class="next-btn">ĐĂNG KÝ</button>
+    
+                <div class="separator">HOẶC</div>
+    
+                <div class="social-login">
+                    <button class="facebook">Facebook</button>
+                    <button class="google">Google</button>
+                </div>
+    
+                <div class="login-link">
+                    <p>Bạn đã có tài khoản? <a href="../filecon/DangNhap.html">Đăng nhập</a></p>
+                </div>
+            </form>
+         </div>
+  </article>
+</div>
+    <!-- footer -->
+    <div id="footer-container"></div>
+
+    <!-- Script header -->
+    <script src="../filejs/header.js"></script>
+    <!-- Script nav -->
+    <script src="../filejs/nav.js"></script>
+    <!-- Script footer -->
+    <script src="../filejs/footer.js"></script>
+</body>
+</html>
